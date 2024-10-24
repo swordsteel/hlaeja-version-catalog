@@ -61,6 +61,7 @@ setup
 check_last_commit
 
 # unSnapshotCatalogVersion
+un_snapshot_catalog "hlaejaCorePlugin"
 
 # unSnapshotVersion
 un_snapshot_version
