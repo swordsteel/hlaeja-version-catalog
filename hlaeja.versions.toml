@@ -1,5 +1,23 @@
 [versions]
+# kotlin version
+kotlin = "2.0.21"
+
+# plugin third party version
+arturboschDetektPlugin = "1.23.7"
+jlleitschuhKtlintPlugin = "12.1.1"
 
 [libraries]
+# kotlin libraries
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+
+# mockk libraries
+io-mockk = { group = "io.mockk", name = "mockk", version = "1.13.13" }
 
 [plugins]
+# kotlin plugin
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+# third party plugin
+io-gitlab-arturbosch-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "arturboschDetektPlugin" }
+org-jlleitschuh-gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "jlleitschuhKtlintPlugin" }
+
