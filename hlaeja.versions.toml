@@ -7,7 +7,7 @@ arturboschDetektPlugin = "1.23.7"
 jlleitschuhKtlintPlugin = "12.1.1"
 
 # hlaeja version
-hlaejaCorePlugin = "0.1.0-SNAPSHOT"
+hlaejaCorePlugin = "0.1.0"
 
 
 [libraries]
