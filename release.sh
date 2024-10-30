@@ -84,6 +84,7 @@ check_differences master
 
 # un-snapshot catalog versions for release
 un_snapshot_catalog "hlaejaCorePlugin"
+un_snapshot_catalog "hlaejaCommonPlugin"
 
 # un-snapshot properties for release
 un_snapshot_version version

@@ -8,6 +8,7 @@ jlleitschuhKtlintPlugin = "12.1.1"
 
 # hlaeja version
 hlaejaCorePlugin = "0.1.0"
+hlaejaCommonPlugin = "0.1.0-SNAPSHOT"
 
 
 [libraries]
@@ -41,3 +42,13 @@ org-jlleitschuh-gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.
 
 # hlaeja plugin
 ltd-hlaeja-plugin-core = { id = "ltd.hlaeja.plugin.hlaeja-core-plugin", version.ref = "hlaejaCorePlugin" }
+ltd-hlaeja-plugin-common = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-common-detekt = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-detekt", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-common-ktlint = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-ktlint", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-library = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-library-manifest = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-manifest", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-library-publish = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-publish", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-service = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-service-container = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-container", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-service-integration-test = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-integration-test", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-service-process-resource = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-process-resource", version.ref = "hlaejaCommonPlugin" }
