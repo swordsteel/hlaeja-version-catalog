@@ -24,6 +24,7 @@ org-junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-
 io-gitlab-arturbosch-detekt-gradle-plugin = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "arturboschDetektPlugin" }
 org-jetbrains-kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 org-jlleitschuh-ktlint-gradle-plugin = { group = "org.jlleitschuh.gradle", name = "ktlint-gradle", version.ref = "jlleitschuhKtlintPlugin" }
+org-springframework-springboot-gradle-plugin = { group = "org.springframework.boot", name = "spring-boot-gradle-plugin", version = "3.3.5" }
 
 # plugin common dependencies hlaeja
 ltd-hlaeja-plugin-core = { group = "ltd.hlaeja.plugin.hlaeja-core-plugin", name = "ltd.hlaeja.plugin.hlaeja-core-plugin.gradle.plugin", version.ref = "hlaejaCorePlugin" }
