@@ -8,7 +8,7 @@ jlleitschuhKtlintPlugin = "12.1.1"
 
 # hlaeja version
 hlaejaCorePlugin = "0.1.0"
-hlaejaCommonPlugin = "0.1.0-SNAPSHOT"
+hlaejaCommonPlugin = "0.1.0"
 
 
 [libraries]
