@@ -5,6 +5,8 @@ kotlin = "2.0.10"
 # plugin third party version
 arturboschDetektPlugin = "1.23.7"
 jlleitschuhKtlintPlugin = "12.1.1"
+springframeworkBoot = "3.3.5"
+bmuschkoDocker = "9.4.0"
 
 # hlaeja version
 hlaejaCorePlugin = "0.1.0"
@@ -13,36 +15,45 @@ hlaejaCommonMessages = "0.1.0-SNAPSHOT"
 
 
 [libraries]
-# kotlin libraries
-kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+com-influxdb-client-kotlin = { group = "com.influxdb", name = "influxdb-client-kotlin", version = "7.2.0" }
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor" }
+org-springframework-springboot-actuator-starter = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
+org-springframework-springboot-webflux-starter = { group = "org.springframework.boot", name = "spring-boot-starter-webflux" }
 
-# mockk libraries
+# testing libraries
 io-mockk = { group = "io.mockk", name = "mockk", version = "1.13.13" }
-
-org-eclipse-jgit = { group = "org.eclipse.jgit", name = "org.eclipse.jgit", version = "7.0.0.202409031743-r" }
+io-projectreactor-reactor-test = { group = "io.projectreactor", name = "reactor-test" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+kotlin-test-junit5 = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test" }
 org-junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params" }
+org-junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+org-springframework-springboot-test-starter = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+
+# plugin core dependencies
+org-eclipse-jgit = { group = "org.eclipse.jgit", name = "org.eclipse.jgit", version = "7.0.0.202409031743-r" }
 
 # plugin common dependencies
-com-bmuschko-docker-gradle-plugin = { group = "com.bmuschko", name = "gradle-docker-plugin", version = "9.4.0" }
+com-bmuschko-docker-gradle-plugin = { group = "com.bmuschko", name = "gradle-docker-plugin", version.ref = "bmuschkoDocker" }
 io-gitlab-arturbosch-detekt-gradle-plugin = { group = "io.gitlab.arturbosch.detekt", name = "detekt-gradle-plugin", version.ref = "arturboschDetektPlugin" }
+ltd-hlaeja-plugin-core = { group = "ltd.hlaeja.plugin.hlaeja-core-plugin", name = "ltd.hlaeja.plugin.hlaeja-core-plugin.gradle.plugin", version.ref = "hlaejaCorePlugin" }
 org-jetbrains-kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 org-jlleitschuh-ktlint-gradle-plugin = { group = "org.jlleitschuh.gradle", name = "ktlint-gradle", version.ref = "jlleitschuhKtlintPlugin" }
-org-springframework-springboot-gradle-plugin = { group = "org.springframework.boot", name = "spring-boot-gradle-plugin", version = "3.3.5" }
-
-# plugin common dependencies hlaeja
-ltd-hlaeja-plugin-core = { group = "ltd.hlaeja.plugin.hlaeja-core-plugin", name = "ltd.hlaeja.plugin.hlaeja-core-plugin.gradle.plugin", version.ref = "hlaejaCorePlugin" }
+org-springframework-springboot-gradle-plugin = { group = "org.springframework.boot", name = "spring-boot-gradle-plugin", version.ref = "springframeworkBoot" }
 
 # plugin common dependencies hlaeja
 ltd-hlaeja-library-common-messages = { group = "ltd.hlaeja.library", name = "hlaeja-common-messages", version.ref = "hlaejaCommonMessages" }
 
 
 [plugins]
-# kotlin plugin
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
-
-# third party plugin
+com-bmuschko-docker = { id = "com.bmuschko.docker-spring-boot-application", version.ref = "bmuschkoDocker" }
 io-gitlab-arturbosch-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "arturboschDetektPlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
 org-jlleitschuh-gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "jlleitschuhKtlintPlugin" }
+spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.6" }
+springframework-boot = { id = "org.springframework.boot", version.ref = "springframeworkBoot" }
 
 # hlaeja plugin
 ltd-hlaeja-plugin-core = { id = "ltd.hlaeja.plugin.hlaeja-core-plugin", version.ref = "hlaejaCorePlugin" }
