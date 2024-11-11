@@ -9,6 +9,7 @@ jlleitschuhKtlintPlugin = "12.1.1"
 # hlaeja version
 hlaejaCorePlugin = "0.1.0"
 hlaejaCommonPlugin = "0.1.0"
+hlaejaCommonMessages = "0.1.0-SNAPSHOT"
 
 
 [libraries]
@@ -30,6 +31,9 @@ org-springframework-springboot-gradle-plugin = { group = "org.springframework.bo
 
 # plugin common dependencies hlaeja
 ltd-hlaeja-plugin-core = { group = "ltd.hlaeja.plugin.hlaeja-core-plugin", name = "ltd.hlaeja.plugin.hlaeja-core-plugin.gradle.plugin", version.ref = "hlaejaCorePlugin" }
+
+# plugin common dependencies hlaeja
+ltd-hlaeja-library-common-messages = { group = "ltd.hlaeja.library", name = "hlaeja-common-messages", version.ref = "hlaejaCommonMessages" }
 
 
 [plugins]
