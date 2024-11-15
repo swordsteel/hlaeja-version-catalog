@@ -11,7 +11,7 @@ bmuschkoDocker = "9.4.0"
 # hlaeja version
 hlaejaCorePlugin = "0.1.0"
 hlaejaCommonPlugin = "0.1.0"
-hlaejaCommonMessages = "0.1.0-SNAPSHOT"
+hlaejaCommonMessages = "0.1.0"
 
 
 [libraries]
