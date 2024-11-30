@@ -12,35 +12,36 @@ jsonwebtoken = "0.12.6"
 # hlaeja version
 hlaejaCorePlugin = "0.1.0"
 hlaejaCommonPlugin = "0.1.0"
-hlaejaCommonMessages = "0.2.0"
+hlaejaCommonMessages = "0.3.0-SNAPSHOT"
 
 
 [libraries]
-com-fasterxml-jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin" }
-com-influxdb-client-kotlin = { group = "com.influxdb", name = "influxdb-client-kotlin", version = "7.2.0" }
+fasterxml-jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin" }
+influxdb-client-kotlin = { group = "com.influxdb", name = "influxdb-client-kotlin", version = "7.2.0" }
 jjwt-api = { group = "io.jsonwebtoken", name = "jjwt-api", version.ref = "jsonwebtoken" }
 jjwt-impl = { group = "io.jsonwebtoken", name = "jjwt-impl", version.ref = "jsonwebtoken" }
 jjwt-jackson = { group = "io.jsonwebtoken", name = "jjwt-jackson", version.ref = "jsonwebtoken" }
 kotlin-logging = { group = "io.github.microutils", name = "kotlin-logging-jvm", version = "3.0.5" }
 kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor" }
-org-postgresql = { group = "org.postgresql", name = "postgresql" }
-org-postgresql-r2dbc = { group = "org.postgresql", name = "r2dbc-postgresql" }
-org-springframework-springboot-actuator-starter = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
-org-springframework-springboot-r2dbc-starter = { group = "org.springframework.boot", name = "spring-boot-starter-data-r2dbc" }
-org-springframework-springboot-webflux-starter = { group = "org.springframework.boot", name = "spring-boot-starter-webflux" }
-
+postgresql = { group = "org.postgresql", name = "postgresql" }
+postgresql-r2dbc = { group = "org.postgresql", name = "r2dbc-postgresql" }
+springboot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
+springboot-starter-cassandra = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra"}
+springboot-starter-cassandra-reactive = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra-reactive"}
+springboot-starter-r2dbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-r2dbc" }
+springboot-starter-webflux = { group = "org.springframework.boot", name = "spring-boot-starter-webflux" }
 
 # testing libraries
 assertj-core = { group = "org.assertj", name = "assertj-core", version = "3.26.3" }
-io-mockk = { group = "io.mockk", name = "mockk", version = "1.13.13" }
-io-projectreactor-reactor-test = { group = "io.projectreactor", name = "reactor-test" }
+junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
 kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit5 = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test" }
-org-junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params" }
-org-junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
-org-springframework-springboot-test-starter = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+mockk = { group = "io.mockk", name = "mockk", version = "1.13.13" }
+projectreactor-reactor-test = { group = "io.projectreactor", name = "reactor-test" }
+springboot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
 
 # plugin core dependencies
 org-eclipse-jgit = { group = "org.eclipse.jgit", name = "org.eclipse.jgit", version = "7.0.0.202409031743-r" }
@@ -54,7 +55,7 @@ org-jlleitschuh-ktlint-gradle-plugin = { group = "org.jlleitschuh.gradle", name 
 org-springframework-springboot-gradle-plugin = { group = "org.springframework.boot", name = "spring-boot-gradle-plugin", version.ref = "springframeworkBoot" }
 
 # plugin common dependencies hlaeja
-ltd-hlaeja-library-common-messages = { group = "ltd.hlaeja.library", name = "hlaeja-common-messages", version.ref = "hlaejaCommonMessages" }
+library-hlaeja-common-messages = { group = "ltd.hlaeja.library", name = "hlaeja-common-messages", version.ref = "hlaejaCommonMessages" }
 
 
 [plugins]
