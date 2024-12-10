@@ -10,9 +10,9 @@ bmuschkoDocker = "9.4.0"
 jsonwebtoken = "0.12.6"
 
 # hlaeja version
-hlaejaCorePlugin = "0.2.0-SNAPSHOT"
-hlaejaCommonPlugin = "0.2.0-SNAPSHOT"
-hlaejaCommonMessages = "0.4.0-SNAPSHOT"
+hlaejaCorePlugin = "0.2.0"
+hlaejaCommonPlugin = "0.2.0"
+hlaejaCommonMessages = "0.4.0"
 
 
 [libraries]
