@@ -10,9 +10,9 @@ bmuschkoDocker = "9.4.0"
 jsonwebtoken = "0.12.6"
 
 # hlaeja version
-hlaejaCorePlugin = "0.1.0"
-hlaejaCommonPlugin = "0.1.0"
-hlaejaCommonMessages = "0.3.0"
+hlaejaCorePlugin = "0.2.0-SNAPSHOT"
+hlaejaCommonPlugin = "0.2.0-SNAPSHOT"
+hlaejaCommonMessages = "0.4.0-SNAPSHOT"
 
 
 [libraries]
@@ -79,3 +79,4 @@ ltd-hlaeja-plugin-service = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.servi
 ltd-hlaeja-plugin-service-container = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-container", version.ref = "hlaejaCommonPlugin" }
 ltd-hlaeja-plugin-service-integration-test = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-integration-test", version.ref = "hlaejaCommonPlugin" }
 ltd-hlaeja-plugin-service-process-resource = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-process-resource", version.ref = "hlaejaCommonPlugin" }
+ltd-hlaeja-plugin-certificate = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.certificate", version.ref = "hlaejaCommonPlugin" }
