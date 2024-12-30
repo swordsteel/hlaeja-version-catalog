@@ -13,6 +13,7 @@ jsonwebtoken = "0.12.6"
 hlaejaCorePlugin = "0.2.0"
 hlaejaCommonPlugin = "0.2.0"
 hlaejaCommonMessages = "0.5.0"
+hlaejaJwt = "0.1.0-SNAPSHOT"
 
 
 [libraries]
@@ -61,7 +62,7 @@ org-springframework-springboot-gradle-plugin = { group = "org.springframework.bo
 
 # plugin common dependencies hlaeja
 library-hlaeja-common-messages = { group = "ltd.hlaeja.library", name = "hlaeja-common-messages", version.ref = "hlaejaCommonMessages" }
-
+library-hlaeja-jwt = { group = "ltd.hlaeja.library", name = "hlaeja-jwt", version.ref = "hlaejaJwt" }
 
 [plugins]
 spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.6" }

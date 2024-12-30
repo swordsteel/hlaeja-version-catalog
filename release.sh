@@ -86,6 +86,7 @@ check_differences master
 un_snapshot_catalog "hlaejaCorePlugin"
 un_snapshot_catalog "hlaejaCommonPlugin"
 un_snapshot_catalog "hlaejaCommonMessages"
+un_snapshot_catalog "hlaejaJwt"
 
 # un-snapshot properties for release
 un_snapshot_version version
