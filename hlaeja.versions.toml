@@ -12,7 +12,7 @@ jsonwebtoken = "0.12.6"
 # hlaeja version
 hlaejaCorePlugin = "0.2.0"
 hlaejaCommonPlugin = "0.2.0"
-hlaejaCommonMessages = "0.5.0"
+hlaejaCommonMessages = "0.6.0-SNAPSHOT"
 hlaejaJwt = "0.1.0-SNAPSHOT"
 
 
@@ -29,12 +29,14 @@ kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor" }
 postgresql = { group = "org.postgresql", name = "postgresql" }
 postgresql-r2dbc = { group = "org.postgresql", name = "r2dbc-postgresql" }
+springboot-starter = { group = "org.springframework.boot", name = "spring-boot-starter" }
 springboot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
 springboot-starter-cache = { group = "org.springframework.boot", name = "spring-boot-starter-cache" }
 springboot-starter-cassandra = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra"}
 springboot-starter-cassandra-reactive = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra-reactive"}
 springboot-starter-r2dbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-r2dbc" }
 springboot-starter-redis = { group = "org.springframework.boot", name = "spring-boot-starter-data-redis" }
+springboot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
 springboot-starter-webflux = { group = "org.springframework.boot", name = "spring-boot-starter-webflux" }
 
 # testing libraries
