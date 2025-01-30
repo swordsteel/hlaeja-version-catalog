@@ -34,8 +34,8 @@ projectreactor-kotlin-reactor-extensions = { group = "io.projectreactor.kotlin",
 springboot-starter = { group = "org.springframework.boot", name = "spring-boot-starter" }
 springboot-starter-actuator = { group = "org.springframework.boot", name = "spring-boot-starter-actuator" }
 springboot-starter-cache = { group = "org.springframework.boot", name = "spring-boot-starter-cache" }
-springboot-starter-cassandra = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra"}
-springboot-starter-cassandra-reactive = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra-reactive"}
+springboot-starter-cassandra = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra" }
+springboot-starter-cassandra-reactive = { group = "org.springframework.boot", name = "spring-boot-starter-data-cassandra-reactive" }
 springboot-starter-r2dbc = { group = "org.springframework.boot", name = "spring-boot-starter-data-r2dbc" }
 springboot-starter-redis = { group = "org.springframework.boot", name = "spring-boot-starter-data-redis" }
 springboot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
@@ -46,7 +46,8 @@ thymeleaf-spring-security = { group = "org.thymeleaf.extras", name = "thymeleaf-
 # testing libraries
 assertj-core = { group = "org.assertj", name = "assertj-core", version = "3.26.3" }
 mockk = { group = "io.mockk", name = "mockk", version = "1.13.13" }
-
+testcontainers-junit = { group = "org.testcontainers", name = "junit-jupiter" }
+testcontainers-postgresql = { group = "org.testcontainers", name = "postgresql" }
 junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params" }
 junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
 kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
