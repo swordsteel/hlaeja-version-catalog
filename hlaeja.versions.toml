@@ -40,6 +40,7 @@ springboot-starter-r2dbc = { group = "org.springframework.boot", name = "spring-
 springboot-starter-redis = { group = "org.springframework.boot", name = "spring-boot-starter-data-redis" }
 springboot-starter-security = { group = "org.springframework.boot", name = "spring-boot-starter-security" }
 springboot-starter-thymeleaf = { group = "org.springframework.boot", name = "spring-boot-starter-thymeleaf" }
+springboot-starter-validation = { group = "org.springframework.boot", name = "spring-boot-starter-validation" }
 springboot-starter-webflux = { group = "org.springframework.boot", name = "spring-boot-starter-webflux" }
 thymeleaf-spring-security = { group = "org.thymeleaf.extras", name = "thymeleaf-extras-springsecurity6" }
 
