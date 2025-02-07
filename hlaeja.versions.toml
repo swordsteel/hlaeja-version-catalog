@@ -69,9 +69,9 @@ org-jlleitschuh-ktlint-gradle-plugin = { group = "org.jlleitschuh.gradle", name 
 org-springframework-springboot-gradle-plugin = { group = "org.springframework.boot", name = "spring-boot-gradle-plugin", version.ref = "springframeworkBoot" }
 
 # plugin common dependencies hlaeja
-library-hlaeja-common-messages = { group = "ltd.hlaeja.library", name = "hlaeja-common-messages", version.ref = "hlaejaCommonMessages" }
-library-hlaeja-jwt = { group = "ltd.hlaeja.library", name = "hlaeja-jwt", version.ref = "hlaejaJwt" }
-library-hlaeja-test = { group = "ltd.hlaeja.library", name = "hlaeja-test", version.ref = "hlaejaTest" }
+library-common-messages = { group = "ltd.hlaeja.library", name = "hlaeja-common-messages", version.ref = "hlaejaCommonMessages" }
+library-jwt = { group = "ltd.hlaeja.library", name = "hlaeja-jwt", version.ref = "hlaejaJwt" }
+library-test = { group = "ltd.hlaeja.library", name = "hlaeja-test", version.ref = "hlaejaTest" }
 
 [plugins]
 spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.6" }
