@@ -12,9 +12,9 @@ jsonwebtoken = "0.12.6"
 # hlaeja version
 hlaejaCorePlugin = "0.2.0"
 hlaejaCommonPlugin = "0.2.0"
-hlaejaCommonMessages = "0.7.0-SNAPSHOT"
+hlaejaCommonMessages = "0.7.0"
 hlaejaJwt = "0.1.0"
-hlaejaTest = "0.1.0-SNAPSHOT"
+hlaejaTest = "0.1.0"
 
 
 [libraries]
