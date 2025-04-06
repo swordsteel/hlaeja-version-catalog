@@ -3,6 +3,7 @@
 kotlin = "2.0.10"
 
 # plugin third party version
+dependencyManagementPlugin = "1.1.7"
 arturboschDetektPlugin = "1.23.8"
 jlleitschuhKtlintPlugin = "12.2.0"
 springframeworkBoot = "3.4.4"
@@ -75,25 +76,24 @@ library-jwt = { group = "ltd.hlaeja.library", name = "hlaeja-jwt", version.ref =
 library-test = { group = "ltd.hlaeja.library", name = "hlaeja-test", version.ref = "hlaejaTest" }
 
 [plugins]
-spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7" }
-
 com-bmuschko-docker = { id = "com.bmuschko.docker-spring-boot-application", version.ref = "bmuschkoDocker" }
 io-gitlab-arturbosch-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "arturboschDetektPlugin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
 org-jlleitschuh-gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "jlleitschuhKtlintPlugin" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "dependencyManagementPlugin" }
 springframework-boot = { id = "org.springframework.boot", version.ref = "springframeworkBoot" }
 
 # hlaeja plugin
-ltd-hlaeja-plugin-core = { id = "ltd.hlaeja.plugin.hlaeja-core-plugin", version.ref = "hlaejaCorePlugin" }
-ltd-hlaeja-plugin-common = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-common-detekt = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-detekt", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-common-ktlint = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-ktlint", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-library = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-library-manifest = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-manifest", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-library-publish = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-publish", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-service = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-service-container = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-container", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-service-integration-test = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-integration-test", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-service-process-resource = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-process-resource", version.ref = "hlaejaCommonPlugin" }
-ltd-hlaeja-plugin-certificate = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.certificate", version.ref = "hlaejaCommonPlugin" }
+plugin-core = { id = "ltd.hlaeja.plugin.hlaeja-core-plugin", version.ref = "hlaejaCorePlugin" }
+plugin-common = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common", version.ref = "hlaejaCommonPlugin" }
+plugin-common-detekt = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-detekt", version.ref = "hlaejaCommonPlugin" }
+plugin-common-ktlint = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-ktlint", version.ref = "hlaejaCommonPlugin" }
+plugin-library = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library", version.ref = "hlaejaCommonPlugin" }
+plugin-library-manifest = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-manifest", version.ref = "hlaejaCommonPlugin" }
+plugin-library-publish = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-publish", version.ref = "hlaejaCommonPlugin" }
+plugin-service = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service", version.ref = "hlaejaCommonPlugin" }
+plugin-service-container = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-container", version.ref = "hlaejaCommonPlugin" }
+plugin-service-integration-test = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-integration-test", version.ref = "hlaejaCommonPlugin" }
+plugin-service-process-resource = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-process-resource", version.ref = "hlaejaCommonPlugin" }
+plugin-certificate = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.certificate", version.ref = "hlaejaCommonPlugin" }
