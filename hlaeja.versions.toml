@@ -1,11 +1,11 @@
 [versions]
-# kotlin version
+# kotlin version (detekt limit version)
 kotlin = "2.0.10"
 
 # plugin third party version
-arturboschDetektPlugin = "1.23.7"
-jlleitschuhKtlintPlugin = "12.1.1"
-springframeworkBoot = "3.3.5"
+arturboschDetektPlugin = "1.23.8"
+jlleitschuhKtlintPlugin = "12.2.0"
+springframeworkBoot = "3.4.4"
 bmuschkoDocker = "9.4.0"
 jsonwebtoken = "0.12.6"
 
@@ -19,7 +19,7 @@ hlaejaTest = "0.2.0"
 
 [libraries]
 influxdb-client-kotlin = { group = "com.influxdb", name = "influxdb-client-kotlin", version = "7.2.0" }
-kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging-jvm", version = "7.0.3" }
+kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging-jvm", version = "7.0.6" }
 micrometer-registry-influx = { group = "io.micrometer", name = "micrometer-registry-influx", version = "1.14.2" }
 
 fasterxml-jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin" }
@@ -46,8 +46,8 @@ springboot-starter-webflux = { group = "org.springframework.boot", name = "sprin
 thymeleaf-spring-security = { group = "org.thymeleaf.extras", name = "thymeleaf-extras-springsecurity6" }
 
 # testing libraries
-assertj-core = { group = "org.assertj", name = "assertj-core", version = "3.26.3" }
-mockk = { group = "io.mockk", name = "mockk", version = "1.13.13" }
+assertj-core = { group = "org.assertj", name = "assertj-core", version = "3.27.3" }
+mockk = { group = "io.mockk", name = "mockk", version = "1.13.17" }
 testcontainers-junit = { group = "org.testcontainers", name = "junit-jupiter" }
 testcontainers-postgresql = { group = "org.testcontainers", name = "postgresql" }
 junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params" }
@@ -59,7 +59,7 @@ projectreactor-reactor-test = { group = "io.projectreactor", name = "reactor-tes
 springboot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
 
 # plugin core dependencies
-org-eclipse-jgit = { group = "org.eclipse.jgit", name = "org.eclipse.jgit", version = "7.0.0.202409031743-r" }
+org-eclipse-jgit = { group = "org.eclipse.jgit", name = "org.eclipse.jgit", version = "7.2.0.202503040940-r" }
 
 # plugin common dependencies
 com-bmuschko-docker-gradle-plugin = { group = "com.bmuschko", name = "gradle-docker-plugin", version.ref = "bmuschkoDocker" }
@@ -75,7 +75,7 @@ library-jwt = { group = "ltd.hlaeja.library", name = "hlaeja-jwt", version.ref =
 library-test = { group = "ltd.hlaeja.library", name = "hlaeja-test", version.ref = "hlaejaTest" }
 
 [plugins]
-spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.6" }
+spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7" }
 
 com-bmuschko-docker = { id = "com.bmuschko.docker-spring-boot-application", version.ref = "bmuschkoDocker" }
 io-gitlab-arturbosch-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "arturboschDetektPlugin" }
