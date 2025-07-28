@@ -41,10 +41,24 @@ publishing {
     }
 }
 
-tasks.register("clean") {
-    group = "build"
-    doLast {
-        delete("${rootDir.path}/build")
-        println("Default Cleaning!")
+tasks{
+    named("publishToMavenLocal") {
+        dependsOn("buildInfo")
+    }
+    register("clean") {
+        group = "build"
+        doLast {
+            delete("${rootDir.path}/build")
+            println("Default Cleaning!")
+        }
+    }
+    register("buildInfo") {
+        group = "hlaeja"
+        description = "Prints the project name and version"
+        val projectName = project.name
+        val projectVersion = project.version
+        doLast {
+            println("Project Name: $projectName Version: $projectVersion")
+        }
     }
 }
