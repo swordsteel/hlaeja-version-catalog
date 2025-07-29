@@ -1,0 +1,12 @@
+name: Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    uses: swordsteel/hlaeja-common-workflows/.github/workflows/release.yml@master
+    secrets:
+      CI_BOT_PAT: ${{ secrets.CI_BOT_PAT }}
+    with:
+      TYPE: catalog

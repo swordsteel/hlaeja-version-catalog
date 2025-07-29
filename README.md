@@ -4,7 +4,7 @@ A Version Catalog in Gradle is a centralized way to manage and reference depende
 
 ## Releasing version catalog.
 
-Run `release.sh` script from `master` branch.
+Run release pipeline from `master` branch.
 
 ## Publishing version catalog.
 
