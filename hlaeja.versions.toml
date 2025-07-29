@@ -1,32 +1,31 @@
 [versions]
 # kotlin version (detekt limit version)
-kotlin = "2.0.10"
+kotlin = "2.0.21"
 
 # plugin third party version
-dependencyManagementPlugin = "1.1.7"
 arturboschDetektPlugin = "1.23.8"
-jlleitschuhKtlintPlugin = "12.2.0"
-springframeworkBoot = "3.4.4"
 bmuschkoDocker = "9.4.0"
+dependencyManagementPlugin = "1.1.7"
+jlleitschuhKtlintPlugin = "12.3.0"
 jsonwebtoken = "0.12.6"
+springframeworkBoot = "3.5.4"
 
 # hlaeja version
-hlaejaCorePlugin = "0.2.0"
-hlaejaCommonPlugin = "0.2.0"
-hlaejaCommonMessages = "0.8.0"
-hlaejaJwt = "0.1.0"
-hlaejaTest = "0.2.0"
+hlaejaCorePlugin = "0.3.0-SNAPSHOT"
+hlaejaCommonPlugin = "0.3.0-SNAPSHOT"
+hlaejaCommonMessages = "0.9.0-SNAPSHOT"
+hlaejaJwt = "0.2.0-SNAPSHOT"
+hlaejaTest = "0.3.0-SNAPSHOT"
 
 
 [libraries]
 influxdb-client-kotlin = { group = "com.influxdb", name = "influxdb-client-kotlin", version = "7.2.0" }
-kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging-jvm", version = "7.0.6" }
-micrometer-registry-influx = { group = "io.micrometer", name = "micrometer-registry-influx", version = "1.14.2" }
-
-fasterxml-jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin" }
 jjwt-api = { group = "io.jsonwebtoken", name = "jjwt-api", version.ref = "jsonwebtoken" }
 jjwt-impl = { group = "io.jsonwebtoken", name = "jjwt-impl", version.ref = "jsonwebtoken" }
-jjwt-jackson = { group = "io.jsonwebtoken", name = "jjwt-jackson", version.ref = "jsonwebtoken" }
+jjwt-jackson = { group = "io.jsonwebtoken", name = "jjwt-jackson", version.ref = "jsonwebtoken"}
+kotlin-logging = { group = "io.github.oshai", name = "kotlin-logging-jvm", version = "7.0.7" }
+
+fasterxml-jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin" }
 kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-reactor" }
 postgresql = { group = "org.postgresql", name = "postgresql" }
@@ -48,7 +47,7 @@ thymeleaf-spring-security = { group = "org.thymeleaf.extras", name = "thymeleaf-
 
 # testing libraries
 assertj-core = { group = "org.assertj", name = "assertj-core", version = "3.27.3" }
-mockk = { group = "io.mockk", name = "mockk", version = "1.13.17" }
+mockk = { group = "io.mockk", name = "mockk", version = "1.14.5" }
 testcontainers-junit = { group = "org.testcontainers", name = "junit-jupiter" }
 testcontainers-postgresql = { group = "org.testcontainers", name = "postgresql" }
 junit-jupiter-params = { group = "org.junit.jupiter", name = "junit-jupiter-params" }
@@ -60,7 +59,7 @@ projectreactor-reactor-test = { group = "io.projectreactor", name = "reactor-tes
 springboot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
 
 # plugin core dependencies
-org-eclipse-jgit = { group = "org.eclipse.jgit", name = "org.eclipse.jgit", version = "7.2.0.202503040940-r" }
+org-eclipse-jgit = { group = "org.eclipse.jgit", name = "org.eclipse.jgit", version = "7.3.0.202506031305-r" }
 
 # plugin common dependencies
 com-bmuschko-docker-gradle-plugin = { group = "com.bmuschko", name = "gradle-docker-plugin", version.ref = "bmuschkoDocker" }
@@ -76,24 +75,24 @@ library-jwt = { group = "ltd.hlaeja.library", name = "hlaeja-jwt", version.ref =
 library-test = { group = "ltd.hlaeja.library", name = "hlaeja-test", version.ref = "hlaejaTest" }
 
 [plugins]
-com-bmuschko-docker = { id = "com.bmuschko.docker-spring-boot-application", version.ref = "bmuschkoDocker" }
-io-gitlab-arturbosch-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "arturboschDetektPlugin" }
+gradle-detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "arturboschDetektPlugin" }
+gradle-docker = { id = "com.bmuschko.docker-spring-boot-application", version.ref = "bmuschkoDocker" }
+gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "jlleitschuhKtlintPlugin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
-org-jlleitschuh-gradle-ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "jlleitschuhKtlintPlugin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "springframeworkBoot" }
 spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "dependencyManagementPlugin" }
-springframework-boot = { id = "org.springframework.boot", version.ref = "springframeworkBoot" }
 
 # hlaeja plugin
-plugin-core = { id = "ltd.hlaeja.plugin.hlaeja-core-plugin", version.ref = "hlaejaCorePlugin" }
-plugin-common = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common", version.ref = "hlaejaCommonPlugin" }
-plugin-common-detekt = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-detekt", version.ref = "hlaejaCommonPlugin" }
-plugin-common-ktlint = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-ktlint", version.ref = "hlaejaCommonPlugin" }
-plugin-library = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library", version.ref = "hlaejaCommonPlugin" }
-plugin-library-manifest = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-manifest", version.ref = "hlaejaCommonPlugin" }
-plugin-library-publish = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-publish", version.ref = "hlaejaCommonPlugin" }
-plugin-service = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service", version.ref = "hlaejaCommonPlugin" }
-plugin-service-container = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-container", version.ref = "hlaejaCommonPlugin" }
-plugin-service-integration-test = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-integration-test", version.ref = "hlaejaCommonPlugin" }
-plugin-service-process-resource = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-process-resource", version.ref = "hlaejaCommonPlugin" }
-plugin-certificate = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.certificate", version.ref = "hlaejaCommonPlugin" }
+core = { id = "ltd.hlaeja.plugin.hlaeja-core-plugin", version.ref = "hlaejaCorePlugin" }
+common = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common", version.ref = "hlaejaCommonPlugin" }
+common-detekt = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-detekt", version.ref = "hlaejaCommonPlugin" }
+common-ktlint = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.common-ktlint", version.ref = "hlaejaCommonPlugin" }
+library = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library", version.ref = "hlaejaCommonPlugin" }
+library-manifest = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-manifest", version.ref = "hlaejaCommonPlugin" }
+library-publish = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.library-publish", version.ref = "hlaejaCommonPlugin" }
+service = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service", version.ref = "hlaejaCommonPlugin" }
+service-container = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-container", version.ref = "hlaejaCommonPlugin" }
+service-integration-test = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-integration-test", version.ref = "hlaejaCommonPlugin" }
+service-process-resource = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-process-resource", version.ref = "hlaejaCommonPlugin" }
+certificate = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.certificate", version.ref = "hlaejaCommonPlugin" }
