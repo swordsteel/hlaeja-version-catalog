@@ -12,7 +12,7 @@ springframeworkBoot = "3.5.4"
 
 # hlaeja version
 hlaejaCorePlugin = "0.3.0"
-hlaejaCommonPlugin = "0.3.0"
+hlaejaCommonPlugin = "0.4.0-SNAPSHOT"
 hlaejaCommonMessages = "0.9.0"
 hlaejaJwt = "0.2.0"
 hlaejaTest = "0.3.0"
@@ -96,3 +96,5 @@ service-container = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-conta
 service-integration-test = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-integration-test", version.ref = "hlaejaCommonPlugin" }
 service-process-resource = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.service-process-resource", version.ref = "hlaejaCommonPlugin" }
 certificate = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.certificate", version.ref = "hlaejaCommonPlugin" }
+ui-service = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.ui-service", version.ref = "hlaejaCommonPlugin" }
+ui-service-thymeleaf-minify = { id = "ltd.hlaeja.plugin.hlaeja-common-plugin.ui-service-thymeleaf-minify", version.ref = "hlaejaCommonPlugin" }
