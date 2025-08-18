@@ -11,11 +11,11 @@ jsonwebtoken = "0.12.6"
 springframeworkBoot = "3.5.4"
 
 # hlaeja version
-hlaejaCorePlugin = "0.4.0-SNAPSHOT"
-hlaejaCommonPlugin = "0.4.0-SNAPSHOT"
-hlaejaCommonMessages = "0.10.0-SNAPSHOT"
+hlaejaCorePlugin = "0.4.0"
+hlaejaCommonPlugin = "0.4.0"
+hlaejaCommonMessages = "0.10.0"
 hlaejaJwt = "0.2.0"
-hlaejaTest = "0.4.0-SNAPSHOT"
+hlaejaTest = "0.4.0"
 
 
 [libraries]
