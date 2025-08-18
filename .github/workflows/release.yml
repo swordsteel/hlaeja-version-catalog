@@ -9,4 +9,4 @@ jobs:
     secrets:
       CI_BOT_PAT: ${{ secrets.CI_BOT_PAT }}
     with:
-      TYPE: artifact
+      TYPE: catalog
